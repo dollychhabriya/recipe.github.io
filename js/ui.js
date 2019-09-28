@@ -1,3 +1,16 @@
+
+if ('serviceWorker' in navigator) {
+  // console.log("hi");
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('../sw.js')
+      .then(function (registration) {
+        console.log('Registration successful, scope is:', registration.scope);
+      })
+      .catch(function (error) {
+        console.log('Service worker registration failed, error:', error);
+      });
+  })
+}
 document.addEventListener('DOMContentLoaded', function () {
   // nav menu
   const menus = document.querySelectorAll('.side-menu');
