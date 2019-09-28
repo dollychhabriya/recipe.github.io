@@ -2,7 +2,7 @@
 if ('serviceWorker' in navigator) {
   // console.log("hi");
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('../sw.js')
+    navigator.serviceWorker.register('/recipe.github.io/sw.js')
       .then(function (registration) {
         console.log('Registration successful, scope is:', registration.scope);
       })
