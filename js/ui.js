@@ -87,7 +87,7 @@ function getListOfRecipe() {
       document.getElementById("recipeList").innerHTML = "";
       for (i = 0; i < myResult.length; i++) {
         // console.log(myResult[i].index)
-        document.getElementById("recipeList").innerHTML += "<div class='card-panel recipe white row' id='divElement' onclick='updateOnClickFunction(" + myResult[i].id + ");'><img src='/img/dish.png' alt='recipe thumb'><div class='recipe-details'><div class='recipe-title'>" + myResult[i].title + "</div><div class='recipe-ingredients'>" + myResult[i].ingredients + "</div></div><div class='recipe-delete'><i class='material-icons'>delete_outline</i></div></div>";
+        document.getElementById("recipeList").innerHTML += "<div class='card-panel recipe white row' id='divElement' onclick='updateOnClickFunction(" + myResult[i].id + ");'><img src='/recipe.github.io/img/dish.png' alt='recipe thumb'><div class='recipe-details'><div class='recipe-title'>" + myResult[i].title + "</div><div class='recipe-ingredients'>" + myResult[i].ingredients + "</div></div><div class='recipe-delete'><i class='material-icons'>delete_outline</i></div></div>";
         // console.log("Get Result" + getRequest.result[i].title);
       }
     };
