@@ -1,6 +1,6 @@
 const staticCacheName = 'site-static';
 const assets = [
-  'https://dollychhabriya.github.io/recipe.github.io/',
+  '/recipe.github.io/',
   '/recipe.github.io/index.html',
    '/recipe.github.io/js/ui.js',
     '/recipe.github.io/js/materialize.min.js',
